@@ -1,5 +1,9 @@
 import Head from "next/head";
 import { motion as m } from "framer-motion";
+import { Canvas } from "@react-three/fiber";
+import Sphere from "@/components/three/sphere/Sphere";
+import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import SphereCanvas from "@/components/canvas/SphereCanvas";
 
 export default function HomePage() {
   const container = {
@@ -34,14 +38,17 @@ export default function HomePage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="p-5">
+      <main className="w-full h-[100vh] p-5">
         <m.div variants={container} initial="hidden" animate="show" exit="exit">
-          <m.h1 variants={item} className="font-bold text-[250px] -ml-[15px]">
+          <m.h1
+            variants={item}
+            className="font-bold text-[250px] -ml-[15px] select-none"
+          >
             HOME
           </m.h1>
           <m.p
             variants={item}
-            className="text-5xl sm:w-full xl:w-2/3 tracking-wide"
+            className="text-5xl sm:w-full xl:w-2/3 tracking-wide select-none"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rerum
             neque reprehenderit dolorum dicta quod odio nemo soluta expedita
