@@ -1,9 +1,5 @@
 import Head from "next/head";
 import { motion as m } from "framer-motion";
-import { Canvas } from "@react-three/fiber";
-import Sphere from "@/components/three/sphere/Sphere";
-import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
-import SphereCanvas from "@/components/canvas/SphereCanvas";
 
 export default function HomePage() {
   const container = {

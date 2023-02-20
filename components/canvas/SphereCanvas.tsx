@@ -7,14 +7,13 @@ export default function SphereCanvas() {
     <Canvas
       className=" bg-black overflow-hidden absolute"
       style={{ margin: 0, padding: 0, background: "transparent" }}
-      shadows={true}
     >
-      <ambientLight color={"white"} intensity={0.033} />
+      <ambientLight color={"white"} intensity={0.025} />
 
       <PerspectiveCamera
         makeDefault
         position={[800, 0.9, 1.8]}
-        fov={60}
+        fov={50}
         zoom={100.9}
       />
       <OrbitControls
@@ -24,9 +23,10 @@ export default function SphereCanvas() {
         enablePan={false}
         enableRotate={true}
         autoRotate={true}
+        autoRotateSpeed={1}
       />
 
-      <Sphere position={[0, 0, 0]} scale={[30, 30, 30]} />
+      <Sphere position={[0, 0, 0]} scale={[50, 50, 50]} />
       {/* <Box rotateX={2} rotateY={0.2} /> */}
     </Canvas>
   );
