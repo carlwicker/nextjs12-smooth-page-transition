@@ -1,12 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  transpilePackages: [
+    "three",
+    "@react-three/drei",
+    "@react-three/fiber",
+    "@three-ts/orbit-controls",
+  ],
 };
 
-const withTM = require("next-transpile-modules")(["three"]);
-
 module.exports = nextConfig;
-module.exports = withTM();
 
 module.exports = {
   eslint: {

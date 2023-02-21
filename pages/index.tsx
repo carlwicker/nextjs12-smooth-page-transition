@@ -3,15 +3,17 @@ import { motion as m } from "framer-motion";
 
 export default function HomePage() {
   const container = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, x: 500 },
     show: {
       opacity: 1,
+      x: 0,
       transition: {
         staggerChildren: 0.1,
       },
     },
     exit: {
       opacity: 0,
+      x: 500,
       transition: {
         staggerChildren: 0.1,
         staggerDirection: -1,
