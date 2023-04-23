@@ -44,13 +44,13 @@ export default function HomePage() {
           exit="exit"
           className="flex flex-col gap-20"
         >
-          <div className="flex flex-col h-[80vh] justify-center">
-            <m.h1
+          <div className="flex flex-col h-[100vh] justify-center">
+            {/* <m.h1
               variants={item}
               className="font-bold text-[250px] -ml-[15px] select-none"
             >
               HOME
-            </m.h1>
+            </m.h1> */}
             <m.p
               variants={item}
               className="text-5xl sm:w-full xl:w-2/3 tracking-wide select-none"
@@ -60,18 +60,21 @@ export default function HomePage() {
               expedita nisi, accusantium.
             </m.p>
           </div>
-          <m.div className="flex gap-20 text-2xl" variants={item}>
-            <div>
+          <m.div
+            className="flex gap-20 text-2xl h-[100vh] align-middle justify-center"
+            variants={item}
+          >
+            <div className="self-center">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Necessitatibus facere nesciunt commodi excepturi totam ut? Id
               dicta vero rem non? Debitis voluptates facere nulla?
             </div>
-            <div className="text-5xl -rotate-3 font-extralight">
+            <div className="text-5xl -rotate-3 font-extralight self-center">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Necessitatibus facere nesciunt commodi excepturi totam ut? Id
               dicta vero rem non? Debitis voluptates facere nulla?
             </div>
-            <div>
+            <div className="self-center">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Necessitatibus facere nesciunt commodi excepturi totam ut? Id
               dicta vero rem non? Debitis voluptates facere nulla?

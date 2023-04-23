@@ -37,14 +37,20 @@ export default function ContactPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="w-full h-[100vh] p-5">
-        <m.div variants={container} initial="hidden" animate="show" exit="exit">
-          <m.h1
+      <main className="flex w-full h-[100vh] p-5 justify-center align-middle">
+        <m.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          exit="exit"
+          className="align-middlejustify-center self-center flex"
+        >
+          {/* <m.h1
             variants={item}
             className="font-bold text-[250px] -ml-[15px] select-none"
           >
             CONTACT
-          </m.h1>
+          </m.h1> */}
           <m.p
             variants={item}
             className="text-5xl sm:w-full xl:w-2/3 tracking-wide select-none"
